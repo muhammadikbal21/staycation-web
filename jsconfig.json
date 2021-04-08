@@ -1,7 +1,0 @@
-{
-    // ini berfungsi untuk memperingkas penulisan path import tanpa harus menggunakan ../.. dst
-    "compilerOptions": {
-        "baseUrl": "src"
-    },
-    "include": ["src/**/*"]
-}
