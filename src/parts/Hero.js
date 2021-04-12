@@ -5,6 +5,7 @@ import IconCities from 'assets/images/icons/icon-cities.svg'
 import IconTraveler from 'assets/images/icons/icon-traveler.svg'
 import IconTreasure from 'assets/images/icons/icon-treasure.svg'
 import Button from 'elements/Button'
+import numberFormat from 'utils/formatNumber'
 
 export default function Hero(props) {
 
@@ -34,7 +35,7 @@ export default function Hero(props) {
             <div className="col-auto" style={{marginRight: 35}}>
               <img width="36" height="36" src={IconTraveler} alt={`${props.data.travelers} Travelers`} />
               <h6 className="mt-3">
-                {props.data.travelers}{" "}
+                {numberFormat(props.data.travelers)}{" "}
                 <span className="text-gray-500 font-weight-light">
                   travelers
                 </span>
@@ -43,7 +44,7 @@ export default function Hero(props) {
             <div className="col-auto" style={{marginRight: 35}}>
               <img width="36" height="36" src={IconTreasure} alt={`${props.data.treasures} Treasures`} />
               <h6 className="mt-3">
-                {props.data.treasures}{" "}
+                {numberFormat(props.data.treasures)}{" "}
                 <span className="text-gray-500 font-weight-light">
                   treasures
                 </span>
@@ -52,7 +53,7 @@ export default function Hero(props) {
             <div className="col-auto">
               <img width="36" height="36" src={IconCities} alt={`${props.data.cities} Cities`} />
               <h6 className="mt-3">
-                {props.data.cities}{" "}
+                {numberFormat(props.data.cities)}{" "}
                 <span className="text-gray-500 font-weight-light">
                   cities
                 </span>
