@@ -42,6 +42,15 @@
 @import "spinners";
 @import "utilities";
 @import "print";
+@import "container-grid"; // added new file scss
+
+section {
+  margin-bottom: 70px;
+}
+
+.card {
+  height: 100%;
+}
 
 // IconText.js
 .brand-text-icon {
