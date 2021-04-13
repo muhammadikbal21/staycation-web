@@ -5,6 +5,7 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
 
+@import "colorVariables"; // add new file scss
 @import "functions";
 @import "variables";
 @import "mixins";
@@ -43,6 +44,7 @@
 @import "utilities";
 @import "print";
 @import "container-grid"; // added new file scss
+
 
 section {
   margin-bottom: 70px;
@@ -190,4 +192,10 @@ header {
       }
     }
   }
+}
+
+.testimonial-hero,
+.testimonial-hero img {
+  width: 365px;
+  height: 500px;
 }
