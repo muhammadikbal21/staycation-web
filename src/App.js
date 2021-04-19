@@ -4,6 +4,7 @@ import 'assets/scss/style.scss'
 import LandingPage from 'pages/LandingPage'
 import InputNumberExample from 'pages/InputNumberExample';
 import InputDateExample from 'pages/InputDateExample';
+import BreadcrumbExample from 'pages/BreadcrumbExample';
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
         <Route path="/" component={LandingPage} exact />
         <Route path="/input-number" component={InputNumberExample} exact />
         <Route path="/input-date" component={InputDateExample} exact />
+        <Route path="/breadcrumb" component={BreadcrumbExample} exact />
       </Router>
     </div>
   );
