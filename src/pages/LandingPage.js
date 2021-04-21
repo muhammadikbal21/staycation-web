@@ -13,6 +13,12 @@ export default class LandingPage extends Component {
     super(props)
     this.refMostPicked = React.createRef() // memberi arah dengan scroll otomatis ketika button show me di klik
   }
+
+  componentDidMount() {
+    window.title = "Staycation | Home"
+    window.scrollTo(0, 0)
+  }
+
   render() {
     console.log("ini props landing page", this.props);
     return (
